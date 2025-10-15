@@ -1,0 +1,57 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  text-rendering: optimizeLegibility;
+
+  @media (prefers-reduced-motion: reduce) {
+    transition-duration: 0.001ms !important;
+    animation-duration: 0.001ms !important;
+    background-attachment: initial !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: Calibri, sans-serif;
+}
+
+a {
+  color: inherit;
+  cursor: pointer;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding-left: 0;
+}
+
+img,
+iframe {
+  max-width: 100%;
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+details > summary {
+  cursor: pointer;
+  user-select: none;
+}
