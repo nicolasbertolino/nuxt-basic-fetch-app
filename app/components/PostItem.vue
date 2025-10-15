@@ -1,5 +1,6 @@
 <!-- components/PostItem.vue -->
 <script setup lang="ts">
+import { ROUTES } from '~/config/routes'
 import type { PostItemProps } from '~/types'
 
 defineProps<PostItemProps>()
@@ -15,7 +16,7 @@ const text = {
 <template>
   <li class="post">
     <h3 class="post__title">
-      <NuxtLink :to="`/posts/${post.id}`" class="post__link">
+      <NuxtLink :to="ROUTES.postDetail(post.id)" class="post__link">
         {{ post.title }}
       </NuxtLink>
     </h3>
